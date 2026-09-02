@@ -1,8 +1,17 @@
-#!/usr/bin/env python3
-"""
-Autonomous Drone Payload Delivery System with Enhanced Error Handling
-"""
+#final file-------- test comaplted :-16 in:-14 out:- 2
+# ----------------------------------------
+# GroundingDINO-based real-time object detection integrated with MAVLink drone control.
+# Detects target objects, converts image detections into GPS coordinates, and validates
+# targets within a predefined operational area.
+# Uses NMS and DBSCAN clustering to group detections and determine payload-drop locations.
+# Automatically navigates the drone to target coordinates and activates the payload mechanism.
+# Supports waypoint-based mission phases, AUTO/GUIDED/RTL flight modes, position tracking,
+# navigation timeout handling, logging, and emergency shutdown procedures.
+# Uses CUDA when available for accelerated inference.
+# Outputs operational logs and maintains detection/mission state throughout the flight.
 
+
+#!/usr/bin/env python3
 import os
 import sys
 import time
